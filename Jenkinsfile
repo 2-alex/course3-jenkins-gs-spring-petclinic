@@ -2,12 +2,7 @@ pipeline{
     agent any
     
     stages{
-        stage("checkout"){
-            steps
-            {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/2-alex/course3-jenkins-gs-spring-petclinic']])
-            }
-        }
+    
         stage("build")
         {
             steps
