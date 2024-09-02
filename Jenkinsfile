@@ -29,7 +29,7 @@ pipeline{
     {
         always
         {
-            print (${currentBuild.currentResult})// add emailing code here
+            print ("${currentBuild.currentResult}")// add emailing code here
         }
     }
 }
